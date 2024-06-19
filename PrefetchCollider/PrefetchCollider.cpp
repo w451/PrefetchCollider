@@ -98,7 +98,6 @@ void workerThread(int threadn, int threadc) {
 	}
 	LONG orig = InterlockedAdd(&threadsLeft, 1);
 	if (orig == 1) {
-
 		memcpy(&correctChars, buffer, BRUTEFORCED_CHARS);
 	}
 }
